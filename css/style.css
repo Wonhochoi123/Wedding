@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
 
+
+
 /*------------------------------------------------------------------
     IMPORT FILES
 -------------------------------------------------------------------*/
@@ -12,6 +14,8 @@
 @import url(animate.css);
 @import url(font-awesome.min.css);
 @import url(magnific-popup.css);
+@import url(font-.css);
+
 
 /*------------------------------------------------------------------
     SKELETON
@@ -160,7 +164,7 @@ button:focus{
     right: 0;
     bottom: 0;
     left: 0;
-    background: #dd666c;
+    background: #ffffff96;
     z-index: 11000;
     position: fixed;
     display: block;
@@ -270,22 +274,40 @@ button:focus{
 	text-align : center;
 }
 .pulse i{
-	color: #ffffff;
+	color: #480000;
 	font-size: 38px;
 }
 
 /*------------------------------------------------------------------
     HEADER
 -------------------------------------------------------------------*/
+h2{
+	font-size: 12px;
+	font-family: 'Barlow', sans-serif;
+	color: #000000;
+	position: relative;
+	z-index: 3;
+}
+
+h1{
+	text-align:center;
+	font-size: 68px;
+	font-family: 'myFont', cursive;
+	color: #000000;
+	position: relative;
+	z-index: 3;
+}
+
 
 .top-header .navbar{
-	padding: 15px 0px;
+	padding: 0px 0px;
 }
 
 .top-header .navbar .navbar-collapse ul li a{
-	padding: 19px 15px;
+	padding: 0px 15px;
 	text-transform: uppercase;
 	font-size: 18px;
+	background: #ffffff51
 }
 
 .top-header .navbar .navbar-collapse ul li a.active{
@@ -301,16 +323,18 @@ button:focus{
 
 .top-header.fixed-menu{
 	width: 100%;
+	top: 0;
 	position: fixed;
-	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.315);
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeInDown;
 	animation-name: fadeInDown;
-	background: #fff;
+	background: #ffffff96;
 	z-index: 20;
+
 }
 
 .navbar-toggler{
@@ -390,14 +414,15 @@ button:focus{
 
 .lbox-details h1{
 	font-size: 68px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'myFont', cursive;
 	color: #ffffff;
 	position: relative;
 	z-index: 3;
 }
 
 .lbox-details h2{
-	font-size: 48px;
+	font-size: 58px;
+	font-family: 'myFont', cursive;
 	color: #ffffff;
 	position: relative;
 	z-index: 3;
@@ -410,7 +435,7 @@ button:focus{
 .lbox-details p strong{
 	color: #dd666c;
 	font-size: 40px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'myFont', cursive;
 }
 .lbox-details a.btn{
 	background: #63c7bd;
@@ -440,20 +465,18 @@ button:focus{
 }
 .title-box h2{
 	font-size: 60px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'myFont', cursive;
 	color: #222222;
 }
 .title-box h2 span{
 	color: #dd666c;
-	text-decoration: underline;
 }
 .about-main-info h2{
 	font-size: 40px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'myFont', cursive;
 }
 .about-main-info h2 span{
 	color: #dd666c;
-	text-decoration: underline;
 }
 
 
@@ -531,7 +554,7 @@ button:focus{
 }
 
 .display-font{
-	font-family: 'Marck Script', cursive;
+	font-family: 'myFont', cursive;
 	font-size: 30px;
 	color: #222222;
 }
@@ -592,7 +615,7 @@ button:focus{
 	background-color: #f1f1f1;
 }
 .family-info h4{
-	font-family: 'Marck Script', cursive;
+	font-family: 'myFont', cursive;
 	font-size: 24px;
 }
 .family-info p{
