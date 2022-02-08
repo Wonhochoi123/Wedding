@@ -403,7 +403,7 @@ h1{
 
 .lbox-details::before{
 	content: "";
-	background: rgba(0,0,0,0.5);
+	background: rgba(255, 255, 255, 0.192);
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -414,31 +414,36 @@ h1{
 
 .lbox-details h1{
 	font-size: 68px;
+	background-color: #ffffff69;
 	font-family: 'myFont', cursive;
-	color: #ffffff;
+	color: #000000;
 	position: relative;
 	z-index: 3;
+	
 }
 
 .lbox-details h2{
 	font-size: 58px;
+	background-color: #ffffff00;
 	font-family: 'myFont', cursive;
-	color: #ffffff;
+	color: #000000;
 	position: relative;
 	z-index: 3;
 }
 .lbox-details p{
-	color: #ffffff;
+	color: #000000;
+	background-color: #ffffff00;
 	position: relative;
 	z-index: 3;
 }
 .lbox-details p strong{
-	color: #dd666c;
-	font-size: 40px;
+	color: #000000;
+	background-color: #ffffff79;
+	font-size: 68px;
 	font-family: 'myFont', cursive;
 }
 .lbox-details a.btn{
-	background: #63c7bd;
+	background: #00000087;
 	padding: 10px 20px;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -448,7 +453,7 @@ h1{
 	z-index: 3;
 }
 .lbox-details a.btn:hover{
-	background: #dd666c;
+	background: #bf000ab1;
 }
 
 /*------------------------------------------------------------------
