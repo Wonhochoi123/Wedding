@@ -403,7 +403,7 @@ h1{
 
 .lbox-details::before{
 	content: "";
-	background: rgba(255, 255, 255, 0.192);
+	background: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 0px;
 	left: 0px;
