@@ -31,7 +31,7 @@
       }
       return out;
     };
-    let stars = makeStars(4000);
+    let stars = makeStars(400);
 
     const clear = () => {
       c.fillStyle =  "rgb(255,245,245)";
@@ -40,7 +40,7 @@
 
     const putPixel = (x, y, brightness) => {
       const intensity = brightness * 255;
-      const rgb = "RGB(255,255,255)";
+      const rgb = "RGB(200,230,255)";
       c.fillStyle = rgb;
       c.fillRect(x, y, 1, brightness);
     };
