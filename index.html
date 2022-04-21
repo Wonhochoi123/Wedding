@@ -91,13 +91,13 @@
     let stars = makeStars(10000);
 
     const clear = () => {
-      c.fillRect(0, 0, canvas.width, canvas.height);
+      c.fillRect(0, 0, canvas.width, 0);
     };
 
     const putPixel = (x, y, brightness) => {
       const intensity = brightness * 255;
       const rgb = "rgb(255,255,255)";
-      c.fillStyle = "rgba(4, 4, 4, 0.192)";
+      c.fillStyle = rgb;
       c.fillRect(x, y, 1, brightness);
     };
 
