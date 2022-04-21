@@ -144,10 +144,11 @@
         const b = 1 - d * d;
 
         putPixel(x, y, b);
-	clear();
       }
 
       requestAnimationFrame(tick);
+	    	clear();
+
     };
 
     requestAnimationFrame(init);
