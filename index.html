@@ -40,11 +40,11 @@
 
     const putPixel = (x, y, brightness) => {
       const intensity = brightness * 255;
-      const rgb = "RGB(160,190,255)";
+      const rgb = "RGB(255,255,255)";
       c.fillStyle = rgb;
       c.fillRect(x, y, 1, brightness);
     };
-    const moveStars = distance/3 => {
+    const moveStars = distance => {
       const count = stars.length;
       for (var i = 0; i < count; i++) {
         const s = stars[i];
@@ -69,8 +69,8 @@
       const count = stars.length;
       for (var i = 0; i < count; i++) {
         const star = stars[i];
-        const x = cx + star.x / (star.z * 0.001);
-        const y = cy + star.y / (star.z * 0.001);
+        const x = cx + star.x / (star.z * 0.0003);
+        const y = cy + star.y / (star.z * 0.0003);
         if (x < 0 || x >= w || y < 0 || y >= h) {
           continue;
         }
