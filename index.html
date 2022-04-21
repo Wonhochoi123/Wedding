@@ -31,7 +31,7 @@
       }
       return out;
     };
-    let stars = makeStars(400);
+    let stars = makeStars(40000);
 
     const clear = () => {
       c.fillStyle =  "rgb(255,245,245)";
@@ -44,7 +44,7 @@
       c.fillStyle = rgb;
       c.fillRect(x, y, 1, brightness);
     };
-    const moveStars = distance => {
+    const moveStars = distance/3 => {
       const count = stars.length;
       for (var i = 0; i < count; i++) {
         const s = stars[i];
