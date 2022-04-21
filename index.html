@@ -62,7 +62,7 @@
     const tick = time => {
       let elapsed = time - prevTime;
       prevTime = time;
-      moveStars(elapsed * 0.03);
+      moveStars(elapsed * 0.001);
       clear();
       const cx = w / 16;
       const cy = 0;
