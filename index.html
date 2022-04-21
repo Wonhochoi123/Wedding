@@ -31,7 +31,7 @@
       }
       return out;
     };
-    let stars = makeStars(40000);
+    let stars = makeStars(100000);
 
     const clear = () => {
       c.fillStyle =  "rgb(255,235,235)";
@@ -64,13 +64,13 @@
       prevTime = time;
       moveStars(elapsed * 0.1);
       clear();
-      const cx = w / 2;
-      const cy = h / 2;
+      const cx = w / 4;
+      const cy = h / 4;
       const count = stars.length;
       for (var i = 0; i < count; i++) {
         const star = stars[i];
-        const x = cx + star.x / (star.z * 0.0001);
-        const y = cy + star.y / (star.z * 0.0001);
+        const x = cx + star.x / (star.z * 0.001);
+        const y = cy + star.y / (star.z * 0.001);
         if (x < 0 || x >= w || y < 0 || y >= h) {
           continue;
         }
