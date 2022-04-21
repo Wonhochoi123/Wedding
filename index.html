@@ -31,7 +31,7 @@
       }
       return out;
     };
-    let stars = makeStars(100000);
+    let stars = makeStars(50000);
 
     const clear = () => {
       c.fillStyle =  "rgb(255,235,235)";
@@ -62,10 +62,10 @@
     const tick = time => {
       let elapsed = time - prevTime;
       prevTime = time;
-      moveStars(elapsed * 0.1);
+      moveStars(elapsed * 0.03);
       clear();
-      const cx = w / 8;
-      const cy = h / 8;
+      const cx = w / 16;
+      const cy = 0;
       const count = stars.length;
       for (var i = 0; i < count; i++) {
         const star = stars[i];
