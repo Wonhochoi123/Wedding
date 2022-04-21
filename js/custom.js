@@ -6,7 +6,21 @@
 	Loader 
     ................................................. */
 	
-	$(window).on('load', function() { 
+	$(window).on('load', function() {
+		
+		var canvas = document.getElementById("starfield"),
+		    context = canvas.getContext("2d"),
+		    stars = 200;
+		
+		
+		for (var i = 0; i < stars; i++) {
+			x = Math.random() * canvas.offsetWidth;
+			y = Math.random() * canvas.offsetHeight;
+			context.fillStyle = "white";
+			context.fillRect(x,y,1,1);
+		}
+		
+		
 		$('.preloader').fadeOut(); 
 		$('#preloader').delay(550).fadeOut('slow'); 
 		$('body').delay(450).css({'overflow':'visible'});
