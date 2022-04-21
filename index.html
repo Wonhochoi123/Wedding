@@ -4,9 +4,8 @@
 
   <canvas
     id="canvas"
-    style="width: 100%; height: 100%; padding: 0; margin: 0; background-color: rgba(0, 0, 32, 0.2);   position: fixed; z-index: -1;perspective: 10000px;
-"
-  ></canvas>
+    style="width: 100%; height: 100%; padding: 0; margin: 0; background-color: rgba(0, 0, 32, 0.2);   position: fixed; z-index: -1;perspective: 10000px;"
+
   <script>
     const canvas = document.getElementById("canvas");
     const c = canvas.getContext("2d");
@@ -43,13 +42,15 @@
     let stars = makeStars(10000);
 
     const clear = () => {
+      c.fillStyle = "black";
+      c.fillRect(0, 0, canvas.width, canvas.height);
     };
 
     const putPixel = (x, y, brightness) => {
       const intensity = brightness * 255;
-      const rgb = "rgb(240,240,255)";
+      const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
       c.fillStyle = rgb;
-      c.fillRect(x, y, 1, brightness);
+      c.fillRect(x, y, 1, 1);
     };
 
     const moveStars = (distance) => {
@@ -93,15 +94,15 @@
 
         const d = star.z / 1000.0;
         const b = 1 - d * d;
-	putPixel(x*4, y*4, b*4)
 
         putPixel(x, y, b);
       }
+
+      requestAnimationFrame(tick);
     };
 
     requestAnimationFrame(init);
   </script>
-
 	
 	
 	
