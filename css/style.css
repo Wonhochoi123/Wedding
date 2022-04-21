@@ -189,7 +189,7 @@ button:focus{
     right: 0;
     bottom: 0;
     left: 0;
-    background: #EEaaaa;
+    background: #111;
     z-index: 11000;
     position: fixed;
     display: block;
