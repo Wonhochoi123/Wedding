@@ -76,7 +76,7 @@
         }
         const d = star.z / 1000.0;
         const b = 1 - d * d;
-        putPixel(x, y, b*20);
+        putPixel(x*20, y*20, b*20);
       }
       requestAnimationFrame(tick);
     };
